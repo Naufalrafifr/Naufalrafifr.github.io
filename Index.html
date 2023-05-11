@@ -3,14 +3,15 @@
     <Head>
         <title>E-Groceries</title>
         <link rel="stylesheet" href="./CSS/Index.css">
+        <script defer src="./JS/Index.js"></script>
     </Head>
     <Body>
         <header class="header">
             <div class="logo">Moqups</div>
             <div class="nav">
-                <div class="nav-item">Home</div>
-                <div class="nav-item nav-center">Our Packages</div>
-                <div class="nav-item">Call Us</div>
+                <div class="nav-item"><a href="#home">Home</a></div>
+                <div class="nav-item nav-center"><a href="#Our Package">Our Packages</a></div>
+                <div class="nav-item"><a href="#Call_Us">Call Us</a></div>
             </div>
             
         </header>
@@ -24,37 +25,129 @@
 
             <section class="main-form">
                 <div class="content left">
-                    <div class="image">
-                        <img src="Groceries.jpg" alt="Groceries">
+                    <div>
+                        <img src="Groceries.jpg" alt="Groceries" class="imageg">
+                        <img src="Groceries-2.jpg" alt="Groceries" class="imageg">
+                        <img src="Groceries-3.jpg" alt="Groceries" class="imageg">
+                        <button onclick="plusDivs(-1)">Previous</button>
+                        <button onclick="plusDivs(1)">Next</button>
                     </div> 
                     <div class="caption">
                         <p><i>"Setiap hari beli sayur buah yang fresh disini"</i></p>
                     </div>
                     <div class="customers">
-                        <img src="user.png" alt="Groceries">
+                        <img src="user.png" alt="customers" class="photo">
+                        <div class="customers-name">
+                        <P>Florence Hughes</P>
+                        <p><i>Ibu Rumah Tangga, 28</i></p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <p>Use this space to provide users with more information abour your offer. Consider it a follow-up to your headline and explain the benefits of your service product</p>
+                        <div class="feat">
+                            <div class="circle">
+                            1
+                            </div>
+                            <br>
+                            <div class="isi"><p>Your first feature, written in form of a benefit statement</p></div>
+                        </div>
+                        <br>
+                        <div class="feat">
+                            <div class="circle">
+                            2
+                            </div>
+                            <br>
+                            <div class="isi"><p>Your second feature, written in form of a benefit statement</p></div>
+                        </div>
+                        <br>
+                        <div class="feat">
+                            <div class="circle">
+                            3
+                            </div>
+                            <br>
+                            <div class="isi"><p>Your third feature, written in form of a benefit statement</p></div>
+                        </div>
+                        <br>
+                        
+                        
                     </div>
                 </div>
 
                 <div class="content right">
-                    <div class="form">
+                    <form class="form" name="message-form" onsubmit="return validateForm()">
                         <div class="tittle-form">Contact Us </div>
                         <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
                         <label>Your Name:</label>
                         <input id="name" name="name" class="input">
                         <label>Email Address:</label>
-                        <input id="Email Address" name="Email Address" class="input">
+                        <input id="Email" name="Email" class="input">
                         <label>What are you interest in:</label>
-                        <input id="What are you interest in" name="What are you interest in" class="input">
+                        <input id="interest" name="interest" class="input">
                         
                         <button class="button">SEND</button>
-                    </div>
+                    </form>
                 </div>
             </section>
-            <section class="Our Package">
+            <section class="Our Package" id="Our Package">
+                <div class="package">
                 <h1>Our Package</h1>
+                </div>
+            <div class="flex_package_1">
+                <div class="isi_package">
+                    <img src="lampu.png" alt="package" class="foto_feat">
+                    <div class="tawaran">
+                    <div>fresh vegetables</div>
+                    <div>Sayuran segar langsung dari sumber pertanian terbaik</div>
+                    </div>
+                </div>
+                
+                <div class="isi_package">
+                    <img src="lampu.png" alt="package" class="foto_feat">
+                    <div class="tawaran">
+                    <div>fresh vegetables</div>
+                    <div>Sayuran segar langsung dari sumber pertanian terbaik</div>
+                    </div>
+                </div>
+                
+                <div class="isi_package">
+                    <img src="lampu.png" alt="package" class="foto_feat">
+                    <div class="tawaran">
+                    <div>fresh vegetables</div>
+                    <div>Sayuran segar langsung dari sumber pertanian terbaik</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_package_2">
+                <div class="isi_package">
+                    <img src="Star.jpg" alt="package" class="foto_feat">
+                    <div class="tawaran">
+                    <div>fresh vegetables</div>
+                    <div>Sayuran segar langsung dari sumber pertanian terbaik</div>
+                    </div>
+                </div>
+                
+                <div class="isi_package">
+                    <img src="Star.jpg" alt="package" class="foto_feat">
+                    <div class="tawaran">
+                    <div>fresh vegetables</div>
+                    <div>Sayuran segar langsung dari sumber pertanian terbaik</div>
+                    </div>
+                </div>
+                
+                <div class="isi_package">
+                    <img src="Star.jpg" alt="package" class="foto_feat">
+                    <div class="tawaran">
+                    <div>fresh vegetables</div>
+                    <div>Sayuran segar langsung dari sumber pertanian terbaik</div>
+                    </div>
+                </div>
+                
+            </div>
             </section>
-            <section class="Call Us">
-                <h1>Call Us</h1>
+            <section class="Call_Us" id="Call_Us">
+                <p class="tittle-callus">Call Us</p>
+                <p>"Silahkan mengkontak kita dengan nomer yang tertera dibawah ini"</p>
+                <button class="button_call">Contact Us</button>
             </section>
         </main>
     </Body>

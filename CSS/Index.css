@@ -1,3 +1,7 @@
+.logo{
+    font-size: 2em;
+    font-family: cursive;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -9,19 +13,25 @@
     border: 1px solid black;
     border-radius: 3px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .nav-item{
     min-width: 100px;
     text-align: center;
-    padding: 0.5em 1em;
+    padding: 0.7em 1em;
 }
 .nav-center{
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
+
 .banner{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2em;
 }
 
 .main-form{
@@ -32,19 +42,52 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1em;
-    
+    border-radius: 1em; 
 }
+
+.imageg{
+    display: none;
+}
+
 .caption{
     text-align: center;
 }
-.customers{
-    width: 7%;
+.customers {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+.customers-name{
+    border-bottom: 3px solid black;
+    
+}
+.photo{
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid gray;
-    border-radius: 3em;
+    border-radius: 7em;
 }
+.feature{
+    margin-left: 2em;
+}
+
+.feat{
+    display: flex;
+    flex-direction: row;
+    
+}
+.circle{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: lightgray; 
+}
+.isi{
+    margin-left: 1em;
+}
+
 .content{
     width: 50%;
     box-sizing: border-box;
@@ -53,6 +96,12 @@ img{
     padding: 2px;
 
 }
+
+.tittle-form {
+    font-size: 2em;
+    text-align: center;
+}
+
 .form{
     width: 70%;
     background: lightgrey;
@@ -61,4 +110,90 @@ img{
     display: flex;
     flex-direction: column;
     margin-left: 2em;
+    padding: 10%;
+}
+
+.button {
+    margin-top: 3em;
+    background-color: darkgray;
+    padding: 1em;
+}
+.input{
+    margin-bottom: 2em;
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
+.package{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 3em;
+    margin-bottom: 2em;
+}
+.flex_package_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3em;
+    
+    
+}
+.flex_package_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tawaran{
+    display: flex;
+    flex-direction: column;
+}
+
+.foto_feat{
+    width: 150%;
+    border-radius: 3em;
+}
+
+.isi_package{
+    width: 10%;
+    display: flex;
+    margin-left: 2em;
+    margin-right: auto;
+}
+
+.Call_Us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    padding: 2em;
+}
+.tittle-callus{
+    font-size: 2em;
+    margin-bottom: 0.1em;
+}
+.button_call{
+    background-color: lightgray;
+    padding: 10px;
+    border-color: lightgray;
+    margin-top: 2em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        flex-direction: column;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
 }
